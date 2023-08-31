@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Declaración del tipo de documento y el idioma -->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Configuración de la codificación de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Configuración para compatibilidad con IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
+    <title>Menú</title> <!-- Título de la página que aparecerá en la pestaña del navegador -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> <!-- Enlace a la hoja de estilos de Swiper para el carrusel -->
+    <link rel="icon" href="images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"> <!-- Enlace a tu hoja de estilos personalizada -->
 </head>
 
-<body>
-    <header>
+<body> <!-- Cuerpo del documento -->
+    <header> <!-- Encabezado -->
 
-        <div class="menu container">
+        <div class="menu container"> <!-- Contenedor del menú de navegación -->
             
-            <img class="logo-1" src="images/logo.svg" alt="">
-            <input type="checkbox" id="menu" />
-            <label for="menu">
-                <img src="images/menu.png" class="menu-icono" alt="">
+            <img class="logo-1" src="images/logo.svg" alt=""> <!-- Logotipo -->
+            <input type="checkbox" id="menu" /> <!-- Checkbox para controlar el menú desplegable en dispositivos móviles -->
+            <label for="menu"> <!-- Etiqueta para asociar con el checkbox -->
+                <img src="images/menu.png" class="menu-icono" alt=""> <!-- Icono de menú desplegable -->
             </label>
-            <nav class="navbar">
+            <nav class="navbar"> <!-- Barra de navegación -->
 
                 <div class="menu-1">
                     <ul>
@@ -58,15 +59,15 @@
 
     </header>
     
-    <section> 
-        <div class="header-content container">
+    <section> <!-- Sección principal -->
+        <div class="header-content container entrada-animada"> <!-- Contenido del encabezado -->
             
-            <div class="swiper mySwiper-1">
+            <div class="swiper mySwiper-1"> <!-- Carrusel de imágenes -->
                 <div class="swiper-wrapper">
                     
-                    <div class="swiper-slide">
+                    <div class="swiper-slide"> <!-- Imagen y texto -->
                         <div class="slider">
-                            <div class="slider-txt">
+                            <div class="slider-txt"> 
                                 <h1>Hamburguesa Ida</h1>
                                 <p>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -83,7 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide"> <!-- Imagen y texto -->
                         <div class="slider">
                             <div class="slider-txt">
                                 <h1>Sandwich bien picado</h1>
@@ -101,24 +102,24 @@
                                 <img src="images/slider2.png" alt="">
                             </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slider">
-                        <div class="slider-txt">
-                            <h1>Hamburguesa God</h1>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Aliquid harum error eaque nostrum commodi velit maiores. 
-                                Tempora consectetur dicta beatae ex eaque quas, autem nulla, officia expedita fugiat laborum architecto?
-                            </p>
-                            <div class="botones">
-                                <a href="#" class="btn-1">Comprar</a>
-                                <a href="#" class="btn-1">Menu</a>
+                    </div>
+                    <div class="swiper-slide"> <!-- Imagen y texto -->
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Hamburguesa God</h1>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                    Aliquid harum error eaque nostrum commodi velit maiores. 
+                                    Tempora consectetur dicta beatae ex eaque quas, autem nulla, officia expedita fugiat laborum architecto?
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#" class="btn-1">Menu</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="slider-img">
-                            <img src="images/slider3.png" alt="">
-                        </div>
+                            <div class="slider-img">
+                                <img src="images/slider3.png" alt="">
+                            </div>
                     </div>
                 </div>
             </div>
@@ -129,28 +130,26 @@
         </div>
     </section>
     
-    <main class="products">
+    <main class="products">  <!-- Products -->
         <div class="tabs container">
+
             <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
-            <label for="tab1">Hamburguesas</label>
-            <div class="tab">
-                <div class="swiper mySwiper-2" id="swiper1">
-                    <div class="swiper-wrapper">                       
+            <label class="menu-3" for="tab1">Hamburguesas</label>
+            <div class="tab"> <!-- Products -->
+                <div>
+                    <div class="swiper-wrapper-2">                       
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
-                                    <h4>Nuevo</h4>
+                                    <h4 class="nuevo">Nuevo</h4>
                                     <img src="images/food1.png" alt="">
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Hamburguesa Completa</h4>
+                                    <h4 class="nick">Hamburguesa Completa</h4>
                                     <p>No hace falta explicar</p>
                                     <span class="price">$80.00</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
@@ -162,9 +161,6 @@
                                     <span class="price">$70.00</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
@@ -172,23 +168,75 @@
                                 </div>
                                 <div class="product-txt">
                                     <h4>Pollo Anachi</h4>
-                                    <p>No te puedo explicar lo bueno que está este plato</p>
+                                    <p>Pollo empanado, pepinillos, Lechuga, Tomate, Repollo, Cheddar, Salsa a elección</p>
                                     <span class="price">$85.35</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4 class="nuevo">Nuevo</h4>
+                                    <img src="images/food1.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4 class="nick">Hamburguesa Completa</h4>
+                                    <p>No hace falta explicar</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4 class="nuevo">Nuevo</h4>
+                                    <img src="images/food1.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4 class="nick">Hamburguesa Completa</h4>
+                                    <p>No hace falta explicar</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/food2.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Sandwich completo</h4>
+                                    <p>JyQ, Lechuga, Tomate, Salsa a elección</p>
+                                    <span class="price">$70.00</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/food3.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Pollo Anachi</h4>
+                                    <p>Pollo empanado, pepinillos, Lechuga, Tomate, Repollo, Cheddar, Salsa a elección</p>
+                                    <span class="price">$85.35</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4 class="nuevo">Nuevo</h4>
+                                    <img src="images/food1.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4 class="nick">Hamburguesa Completa</h4>
+                                    <p>No hace falta explicar</p>
+                                    <span class="price">$80.00</span>
                                 </div>
                             </div>
                         </div>
                     </div>                   
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
 
             <input type="radio" name="tabs" id="tab2" class="tabInput" value="2">
-            <label for="tab2">Burritos</label>
-            <div class="tab">
-                <div class="swiper mySwiper-2" id="swiper2">
-                    <div class="swiper-wrapper">
-
+            <label class="menu-3" for="tab2">Burritos</label>
+            <div class="tab">  <!-- Products -->
+                <div>
+                    <div class="swiper-wrapper-2">                       
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
@@ -196,50 +244,98 @@
                                     <img src="images/food4.png" alt="">
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Burrito Picado</h4>
-                                    <p>Ojito, este burrito está muy picado</p>
+                                    <h4 class="nuevo">Burrito Bien Picado</h4>
+                                    <p>Carne, Lechuga, Tomate, Cebolla</p>
                                     <span class="price">$80.00</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
                                     <img src="images/food5.png" alt="">
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Burrito Ido</h4>
-                                    <p>Es un viaje de ida</p>
+                                    <h4>Burrito Completo</h4>
+                                    <p>No hace falta explicar</p>
                                     <span class="price">$70.00</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
                                     <img src="images/food6.png" alt="">
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Burrito Anachi</h4>
-                                    <p>Este está GOD</p>
+                                    <h4>Burrito de pollo</h4>
+                                    <p>Igual que el de carne, pero de pollo</p>
                                     <span class="price">$85.35</span>
                                 </div>
                             </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/food4.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4 class="nuevo">Burrito Bien Picado</h4>
+                                    <p>Carne, Lechuga, Tomate, Cebolla</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/food5.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Burrito Completo</h4>
+                                    <p>No hace falta explicar</p>
+                                    <span class="price">$70.00</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/food6.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Burrito de pollo</h4>
+                                    <p>Igual que el de carne, pero de pollo</p>
+                                    <span class="price">$85.35</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/food4.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4 class="nuevo">Burrito Bien Picado</h4>
+                                    <p>Carne, Lechuga, Tomate, Cebolla</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/food5.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Burrito Completo</h4>
+                                    <p>No hace falta explicar</p>
+                                    <span class="price">$70.00</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    </div>                   
                 </div>
             </div>
             
             <input type="radio" name="tabs" id="tab3" class="tabInput" value="3">
-            <label for="tab3">Variedad</label>
-            <div class="tab">
-                <div class="swiper mySwiper-2" id="swiper3">
-                    <div class="swiper-wrapper">
-
+            <label class="menu-3" for="tab3">Varios</label>
+            <div class="tab"> <!-- Products -->
+                <div>
+                    <div class="swiper-wrapper-2">                       
                         <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
@@ -247,54 +343,102 @@
                                     <img src="images/food7.png" alt="">
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Camarin Camarón</h4>
-                                    <p>Camarón que se duerme es cartera</p>
+                                    <h4>Camarin camaron</h4>
+                                    <p>Camarones marinados en salsa agridulce acompañado de verduras de estación</p>
                                     <span class="price">$80.00</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
                                     <img src="images/food8.png" alt="">
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Brochetarda</h4>
-                                    <p>El chef se inspiró mucho en hacer esto</p>
+                                    <h4>Brochetaza</h4>
+                                    <p>Carne, papa, morron, verduras a elección</p>
                                     <span class="price">$70.00</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
                             <div class="product">
                                 <div class="product-img">
                                     <h4>Nuevo</h4>
                                     <img src="images/food9.png" alt="">
                                 </div>
                                 <div class="product-txt">
-                                    <h4>Pizza God</h4>
-                                    <p>No vas a comer una pizza mejor</p>
+                                    <h4>Pizza de la casa</h4>
+                                    <p>Consultar disponibilidad</p>
                                     <span class="price">$85.35</span>
                                 </div>
                             </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/food7.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Camarin camaron</h4>
+                                    <p>Camarones marinados en salsa agridulce acompañado de verduras de estación</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/food8.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Brochetaza</h4>
+                                    <p>Carne, papa, morron, verduras a elección</p>
+                                    <span class="price">$70.00</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/food9.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Pizza de la casa</h4>
+                                    <p>Consultar disponibilidad</p>
+                                    <span class="price">$85.35</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/food9.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Pizza de la casa</h4>
+                                    <p>Consultar disponibilidad</p>
+                                    <span class="price">$85.35</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/food8.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Brochetaza</h4>
+                                    <p>Carne, papa, morron, verduras a elección</p>
+                                    <span class="price">$70.00</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    </div>                   
                 </div>
             </div>
-        </div>
     </main>
 
-    <section class="info container">
+    <section class="info container"> <!-- Sandwich -->
 
         <div class="info-img">
             <img src="images/info.png" alt="">
         </div>
 
         <div class="info-txt">
-            <h2>Sandwich</h2>
+            <h2>Sanguchito sape</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit excepturi maxime doloremque commodi, 
                 voluptas perferendis obcaecati! Accusantium in quae repellat aut veritatis nobis quia facere expedita a omnis. Debitis, tenetur?
@@ -303,7 +447,7 @@
         </div>
     </section>
 
-    <section class="horario">
+    <section class="horario">  <!-- Información de horario y contacto -->
         <div class="horario-info container">
             
             <h2>Horario</h2>
@@ -347,13 +491,13 @@
         </div>
     </section>
 
-    <section>
+    <section>  <!-- Sección con mapa incrustado de Google Maps -->
 
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.686459891311!2d-56.68817250000001!3d-36.609859799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c6c56fc04b771%3A0x5486d5960d2b7311!2sRestaurante%20la%20Barra%20del%20Bosque!5e0!3m2!1ses-419!2sar!4v1692921102359!5m2!1ses-419!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </section>
 
-    <footer class="footer container">
+    <footer class="footer container"> <!-- Footer -->
 
         <img class="logo-2" src="images/logo.svg" alt="">
         <div class="links">
@@ -399,6 +543,7 @@
                         <div class="social">
                             <img src="images/s3.svg" alt="">
                     </a>
+                </div>
             </div>
         </div>
     </footer>

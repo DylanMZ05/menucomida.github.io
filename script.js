@@ -1,5 +1,10 @@
+window.addEventListener("load", function() {
+    const entradaAnimada = document.querySelector(".entrada-animada");
+    entradaAnimada.classList.add("active");
+});
+
 var swiper = new Swiper(".mySwiper-1", {
-    slidesPerView:1,
+    slidesPerView: 1,
     spaceBetween: 30,
     loop:true,
     pagination: {
@@ -9,11 +14,15 @@ var swiper = new Swiper(".mySwiper-1", {
     navigation: {
         nextEl:'.swiper-button-next',
         prevEl:'.swiper-button-prev',
-    }
+    },
+    autoplay: {
+    delay: 4000,
+    },
+    speed: 1000,
 });
 
 var swiper = new Swiper(".mySwiper-2", {
-    slidesPerView:3,
+    slidesPerView: 3,
     spaceBetween: 20,
     loop: true,
     loopFillGroupWithBlank: true,
@@ -36,12 +45,12 @@ var swiper = new Swiper(".mySwiper-2", {
 
 let tabInputs = document.querySelectorAll(".tabInput");
 
-tabInputs.forEarch(function(input) {
+tabInputs.forEach(function(input) {
 
     
-    input.addEventListener("change", function() {
+    input.addEventListener('change', function() {
         let id = input.ariaValueMax;
-        let thisSwiper = document.getElementById("swiper" + id);
+        let thisSwiper = document.getElementById('swiper' + id);
         thisSwiper.swiper.update();
     })
     
