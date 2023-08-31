@@ -729,7 +729,7 @@ body {
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
-  top: 55%; /* Ajusta la posición vertical según sea necesario */
+  top: 50%; /* Ajusta la posición vertical según sea necesario */
   transform: translateY(-50%);
 }
 
@@ -739,5 +739,15 @@ body {
 
 .swiper-button-prev {
   left: -6px; /* Ajusta la posición horizontal según sea necesario */
+}
+
+.slider-txt .botones {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.btn-1 {
+  margin: 0 10px; /* Ajusta los márgenes laterales según sea necesario */
 }
 }
