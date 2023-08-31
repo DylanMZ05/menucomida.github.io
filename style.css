@@ -526,12 +526,19 @@ body {
   }
 
   .slider-txt h1 {
-    font-size: 50px;
+    font-size: 35px;
+    margin-bottom: 20px;
   }
 
   .slider-txt p {
     font-size: 16px;
+    margin-bottom: -20px;
   }
+
+  .tabs label {
+    font-size: 14px; /* Ajustar el tamaño de la fuente para las etiquetas de las pestañas */
+  }
+
 
   .btn-1 {
     padding: 10px 25px;
@@ -687,4 +694,27 @@ body {
   .links h4 {
     margin: 25px 0px 10px 0px;
   }
+
+  .product-img {
+    position: relative;
+}
+
+.product-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ajuste específico para el texto de los productos */
+.product-txt {
+  margin-right: 100px; /* Ajusta este valor según tus necesidades */
+}
+
+.horario h4 {
+  border-bottom: 3px solid #6363631f; /* Cambia el color del subrayado aquí si es necesario */
+  display: inline-block;
+  padding-bottom: -6px; /* Ajusta este valor para controlar el espacio entre el texto y el subrayado */
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 7);;
+}
+
 }
