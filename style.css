@@ -744,7 +744,7 @@ body {
 .slider-txt .botones {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+  margin-top: 30px; /* Ajusta el margen superior según sea necesario */
 }
 
 .btn-1 {
